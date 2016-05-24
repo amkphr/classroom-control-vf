@@ -1,7 +1,7 @@
-class memchaced{
+class memcached{
 
 
-  package {'memchached':
+  package {'memcached':
     ensure => present, 
     }
   
