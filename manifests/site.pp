@@ -15,6 +15,10 @@ node default {
   #   class { 'my_class': }
    notify { "Hello, my name is ${::hostname}": }
    
+   include users
+   
+   include skeleton 
+   
    host { 'testing host entry':
    name => 'testing.puppetlabs.vm', 
    ip => '127.0.0.1', 
