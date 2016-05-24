@@ -1,3 +1,4 @@
+File { backup => false }
 
 ini_setting { 'random ordering':
    ensure  => present,
