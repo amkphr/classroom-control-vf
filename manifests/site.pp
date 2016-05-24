@@ -43,10 +43,17 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
+  
+  host { 'testing host entry':
+  name => 'testing.puppetlabs.vm', 
+  ip => '127.0.0.1', 
+  } 
+  
   exec {"cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
- path => '/usr/bin:/usr/local/bin',
-  creates => '/etc/motd', 
-}
+    path => '/usr/bin:/usr/local/bin',
+    creates => '/etc/motd', 
+  }
+  
   }
   
 #file { '/etc/motd':
