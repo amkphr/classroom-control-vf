@@ -19,6 +19,8 @@ node default {
    
    include skeleton 
    
+   include memcached
+   
    host { 'testing host entry':
    name => 'testing.puppetlabs.vm', 
    ip => '127.0.0.1', 
