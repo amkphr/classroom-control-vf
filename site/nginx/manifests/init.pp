@@ -112,7 +112,7 @@ $user = $::osfamily ? {
   service { 'nginx' :
     ensure => running,
     enable => true,
-    subscribe => [File['nginx conf'], File['default conf']], 
+    subscribe => [File[ "${confdir}/nginx.conf"], File["${confdir}/conf.d/default.conf"]], 
   }
 
 }
