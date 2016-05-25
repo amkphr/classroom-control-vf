@@ -3,7 +3,7 @@ class nginx {
     ensure => present,
     enabled => '1',
     gpgcheck => '1', 
-    priority -> '99', 
+    priority => '99', 
     skip_if_unavailable => '1', 
     gpgkey              => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7',
     before     => [ Package['nginx'], Package['openssl-libs'] ],
