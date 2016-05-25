@@ -9,7 +9,7 @@ class nginx {
     $confdir = '/etc/nginx' 
     $logdir = '/var/log/nginx' 
   } 
-  'windows' {
+  'windows' : {
     $package = 'nginx-services'
     $owner = 'Administrator'
     $group = 'Administrators' 
