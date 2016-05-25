@@ -28,6 +28,10 @@ node default {
    
    include nginx
    
+   # lab 15.1 begin
+   include users::admin 
+   # lab 15.1 end 
+   
    host { 'testing host entry':
    name => 'testing.puppetlabs.vm', 
    ip => '127.0.0.1', 
