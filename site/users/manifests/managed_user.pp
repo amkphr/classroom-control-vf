@@ -1,4 +1,4 @@
-class users::managed_user (
+define users::managed_user (
       $group = $title, 
 ) 
 {
