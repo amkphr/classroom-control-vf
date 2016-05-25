@@ -29,7 +29,7 @@ node default {
    include nginx
    
    # lab 15.1 begin
-   include users::admin 
+   include users::admins
    # lab 15.1 end 
    
    host { 'testing host entry':
