@@ -84,25 +84,25 @@ $user = $::osfamily ? {
     require  => File['nginx rpm'],
   }
   
-  file { '/var/www/' :
+  file { [ $docroot, "${confdir}/conf.d" ]:
     ensure  => directory,
     require => Package['nginx'],
   }
 
-  file { '/var/www/index.html' :
+  file { "${docroot}/index.html":
     ensure  => file,
     source  => 'puppet:///modules/nginx/index.html',
     require => Package['nginx'],
   }
 
-  file { 'nginx conf' :
+  file { "${confdir}/nginx.conf":
     ensure  => file,
     path    => '/etc/nginx/nginx.conf',
     source  => 'puppet:///modules/nginx/nginx.conf',
     notify  => Service['nginx'],
   }
 
-  file { 'default conf' :
+  file { "${confdir}/conf.d/default.conf":
     ensure  => file,
     path    => '/etc/nginx/conf.d/default.conf',
     source  => 'puppet:///modules/nginx/default.conf',
