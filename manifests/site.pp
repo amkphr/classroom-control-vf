@@ -9,6 +9,7 @@ ini_setting { 'random ordering':
  }
 
  node 'amkphr.puppetlabs.vm' {
+   notify { "Hello, this is the blog node " } 
    
    #TODO: Place holder for roles:blog 
    
