@@ -11,7 +11,7 @@ ini_setting { 'random ordering':
  node 'amkphr.puppetlabs.vm' {
    notify { "Hello, this is the blog node ": } 
    
-   include apache
+   # include apache
    
    #TODO: Place holder for roles:blog 
    
