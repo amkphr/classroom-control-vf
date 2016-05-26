@@ -10,3 +10,9 @@ mod 'limits',
   :tag => '0.1.0'
 
 mod 'puppetlabs/apache'
+
+mod 'puppetlabs/mysql'
+
+mod 'mayflower/php'
+
+mod 'hunner/wordpress' 
