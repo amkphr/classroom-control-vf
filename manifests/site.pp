@@ -28,6 +28,12 @@ node default {
    
    include nginx
    
+   # Lab 18.1 begin 
+   class { 'nginx': 
+      root => 'var/vvv/',
+   }
+   # Lab 18.1 end 
+   
    # lab 15.1 begin
    include users::admins
    # lab 15.1 end 
