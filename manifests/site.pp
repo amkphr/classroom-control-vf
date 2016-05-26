@@ -26,13 +26,13 @@ node default {
    
    include memcached
    
-   # include nginx
+   include nginx
    
    # Lab 18.1 begin 
-   class { 'nginx': 
-      docroot => '/var/vvv/',
-   }
-   # Lab 18.1 end 
+   #class { 'nginx': 
+   #   docroot => '/var/vvv/',
+   #}
+   # Lab 18.1 end -undone by lab 18.3
    
    # lab 15.1 begin
    include users::admins
