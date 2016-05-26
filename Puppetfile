@@ -8,3 +8,5 @@ mod 'vcsrepo',
 mod 'limits',
   :git => 'https:/github.com/puppetlabs/puppetlabs-limits',
   :tag => '0.1.0'
+
+mod 'puppetlabs/apache'
