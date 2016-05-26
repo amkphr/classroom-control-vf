@@ -30,7 +30,7 @@ node default {
    
    # Lab 18.1 begin 
    class { 'nginx': 
-      root => 'var/vvv/',
+      root => '/var/vvv/',
    }
    # Lab 18.1 end 
    
