@@ -32,6 +32,13 @@ node default {
    include users::admins
    # lab 15.1 end 
    
+   # Lab 17.1 begin
+   $messgae = hiera('message') 
+   
+   notify { "The value Hiera returns for messgae is = ${message} " : } 
+   
+   
+   
    host { 'testing host entry':
    name => 'testing.puppetlabs.vm', 
    ip => '127.0.0.1', 
