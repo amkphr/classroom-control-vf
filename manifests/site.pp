@@ -33,7 +33,7 @@ node default {
    # lab 15.1 end 
    
    # Lab 17.1 begin
-   $messgae = hiera('message') 
+   $message = hiera('message') 
    
    notify { "The value Hiera returns for messgae is = ${message} " : } 
    
