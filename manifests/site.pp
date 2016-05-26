@@ -26,7 +26,7 @@ node default {
    
    include memcached
    
-   include nginx
+   # include nginx
    
    # Lab 18.1 begin 
    class { 'nginx': 
