@@ -8,7 +8,11 @@ ini_setting { 'random ordering':
    value   => 'title-hash',
  }
 
- 
+ node 'amkphr.puppetlabs.vm' {
+   
+   #TODO: Place holder for roles:blog 
+   
+ }
 node default {
    # This is where you can declare classes for all nodes.
    # Example:
